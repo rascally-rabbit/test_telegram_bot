@@ -7,15 +7,14 @@
 # 4) тест бот-нагадвальнік
 # 5) бот-слоўнік з дадатковым функцыяналам гульні-карткі са словамі
 
-import random
-
 import telebot
 from telebot.types import Message
+import config
 
 # bot token
 STICKER_ID = 'CAACAgQAAxkBAAMTYoP_6JfQZVW2hZyiOSb5MUX4tNAAAogGAAJRjM8BvORQjF7kUHokBA'
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(config.TOKEN)
 
 
 @bot.message_handler(commands=['start'])
